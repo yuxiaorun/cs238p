@@ -1,1 +1,10 @@
 
+The homework3 description: 
+https://www.ics.uci.edu/~aburtsev/238P/hw/hw3-system-calls.html
+
+note:
+part1: use grep -n uptime *.[chS] to see how to add a system call. Follow the uptime example. 
+All information needed is in proc->tf.
+
+part2: use ptable.proc[NPROC] to get the proc information. Notice since the ptable is living in proc.c, 
+you should write your sys_getprocinfo in proc.c instead of in sysproc.c.
